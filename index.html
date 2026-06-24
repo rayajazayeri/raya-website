@@ -39,9 +39,9 @@
   .section-label { font-size: 0.6rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--taupe); margin-bottom: 1rem; }
   .section-rule { width: 40px; height: 0.5px; background: var(--taupe); margin-bottom: 3rem; }
 
-  .section-divider { display: flex; align-items: center; justify-content: center; gap: 1.5rem; padding: 0 4rem; }
-  .section-divider::before, .section-divider::after { content: ''; flex: 1; max-width: 220px; height: 0.5px; background: var(--sand); }
-  .section-divider-mark { width: 6px; height: 6px; border: 0.5px solid var(--taupe); transform: rotate(45deg); flex-shrink: 0; }
+  .section-divider { display: flex; align-items: center; justify-content: center; gap: 1.5rem; padding: 1.5rem 4rem; }
+  .section-divider::before, .section-divider::after { content: ''; flex: 1; max-width: 220px; height: 1.5px; background: var(--taupe); }
+  .section-divider-mark { width: 8px; height: 8px; border: 1px solid var(--taupe); background: var(--taupe); transform: rotate(45deg); flex-shrink: 0; }
 
   #about { display: grid; grid-template-columns: 1fr 1.4fr; gap: 6rem; align-items: center; background: var(--cream); }
   .about-image { aspect-ratio: 3/4; overflow: hidden; }
@@ -157,8 +157,9 @@
 
   /* ── REVIEWS ── */
   #reviews { padding: 3.5rem 1.5rem; width: 100%; }
+  .reviews-title { white-space: normal; max-width: 100%; }
   .reviews-sub { max-width: 100%; }
-  .section-divider { padding: 0 1.5rem; }
+  .section-divider { padding: 1.5rem 1.5rem; }
   .section-divider::before, .section-divider::after { max-width: 80px; }
 
   /* ── SOCIAL ── */
@@ -226,7 +227,7 @@
   .portfolio-cta-btn:hover { background: var(--taupe); }
 
   #reviews { text-align: center; }
-  .reviews-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 4vw, 3.6rem); font-style: italic; font-weight: 300; color: var(--warm-dark); line-height: 1.2; max-width: 620px; margin: 0 auto 1.3rem; }
+  .reviews-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 4vw, 3.6rem); font-style: italic; font-weight: 300; color: var(--warm-dark); line-height: 1.2; margin: 0 auto 1.3rem; white-space: nowrap; }
   .reviews-sub { font-size: 0.95rem; line-height: 1.9; color: var(--warm-mid); max-width: 440px; margin: 0 auto 2.8rem; }
   .reviews-btn {
     display: inline-block;
